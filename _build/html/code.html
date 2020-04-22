@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Code docs &#8212; Deck of cards 0.1 documentation</title>
+    <link rel="stylesheet" href="_static/haiku.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="About this project" href="about.html" /> 
+  </head><body>
+      <div class="header" role="banner"><h1 class="heading"><a href="index.html">
+          <span>Deck of cards 0.1 documentation</span></a></h1>
+        <h2 class="heading"><span>Code docs</span></h2>
+      </div>
+      <div class="topnav" role="navigation" aria-label="top navigation">
+      
+        <p>
+        «&#160;&#160;<a href="about.html">About this project</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+      <div class="content" role="main">
+        
+        
+  <div class="section" id="module-deck_of_cards">
+<span id="code-docs"></span><h1>Code docs<a class="headerlink" href="#module-deck_of_cards" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="deck_of_cards.Card">
+<em class="property">class </em><code class="sig-prename descclassname">deck_of_cards.</code><code class="sig-name descname">Card</code><span class="sig-paren">(</span><em class="sig-param">suit</em>, <em class="sig-param">number</em><span class="sig-paren">)</span><a class="headerlink" href="#deck_of_cards.Card" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Card class represents a single playing card and is initialised by passing a suit and number.</p>
+<dl class="method">
+<dt id="deck_of_cards.Card.number">
+<em class="property">property </em><code class="sig-name descname">number</code><a class="headerlink" href="#deck_of_cards.Card.number" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets or sets the number of a card</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deck_of_cards.Card.suit">
+<em class="property">property </em><code class="sig-name descname">suit</code><a class="headerlink" href="#deck_of_cards.Card.suit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets or sets the suit of a card</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deck_of_cards.Deck">
+<em class="property">class </em><code class="sig-prename descclassname">deck_of_cards.</code><code class="sig-name descname">Deck</code><a class="headerlink" href="#deck_of_cards.Deck" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Deck class represents a deck of playing cards in order.</p>
+<dl class="method">
+<dt id="deck_of_cards.Deck.deal">
+<code class="sig-name descname">deal</code><span class="sig-paren">(</span><em class="sig-param">hand</em><span class="sig-paren">)</span><a class="headerlink" href="#deck_of_cards.Deck.deal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The deal method automaticaly adds a single card to an array that is specified within the code</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deck_of_cards.Deck.populate">
+<code class="sig-name descname">populate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deck_of_cards.Deck.populate" title="Permalink to this definition">¶</a></dt>
+<dd><p>The populate method fills the deck with cards in order</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deck_of_cards.Deck.shuffle">
+<code class="sig-name descname">shuffle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#deck_of_cards.Deck.shuffle" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shuffle method sorts the code within the deck into a random order</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="deck_of_cards.Hand">
+<em class="property">class </em><code class="sig-prename descclassname">deck_of_cards.</code><code class="sig-name descname">Hand</code><a class="headerlink" href="#deck_of_cards.Hand" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Hand class represents a hand of playing cards held by a single player in a typical card game.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="deck_of_cards.Discard_Pile">
+<em class="property">class </em><code class="sig-prename descclassname">deck_of_cards.</code><code class="sig-name descname">Discard_Pile</code><a class="headerlink" href="#deck_of_cards.Discard_Pile" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Discard_Pile class represents a discard pile in a card game.</p>
+<dl class="method">
+<dt id="deck_of_cards.Discard_Pile.discard">
+<code class="sig-name descname">discard</code><span class="sig-paren">(</span><em class="sig-param">hand</em>, <em class="sig-param">card_number</em><span class="sig-paren">)</span><a class="headerlink" href="#deck_of_cards.Discard_Pile.discard" title="Permalink to this definition">¶</a></dt>
+<dd><p>The discard method moves a card from a hand into a seperate list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="deck_of_cards.Discard_Pile.get_face_card">
+<code class="sig-name descname">get_face_card</code><span class="sig-paren">(</span><em class="sig-param">discard_pile</em><span class="sig-paren">)</span><a class="headerlink" href="#deck_of_cards.Discard_Pile.get_face_card" title="Permalink to this definition">¶</a></dt>
+<dd><p>The get_face_card method retrieves the first card from the discard pile list</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+      </div>
+      <div class="bottomnav" role="navigation" aria-label="bottom navigation">
+      
+        <p>
+        «&#160;&#160;<a href="about.html">About this project</a>
+        &#160;&#160;::&#160;&#160;
+        <a class="uplink" href="index.html">Contents</a>
+        </p>
+
+      </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Bryn Patel Stephens.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.
+    </div>
+  </body>
+</html>

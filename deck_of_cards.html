@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module deck_of_cards</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>deck_of_cards</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/bps/Downloads/python/Deck_of_cards/deck_of_cards.py">/Users/bps/Downloads/python/Deck_of_cards/deck_of_cards.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="random.html">random</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="deck_of_cards.html#Card">Card</a>
+</font></dt><dt><font face="helvetica, arial"><a href="deck_of_cards.html#Deck">Deck</a>
+</font></dt><dt><font face="helvetica, arial"><a href="deck_of_cards.html#Discard_Pile">Discard_Pile</a>
+</font></dt><dt><font face="helvetica, arial"><a href="deck_of_cards.html#Hand">Hand</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Card">class <strong>Card</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Card">Card</a>(suit,&nbsp;number)<br>
+&nbsp;<br>
+The&nbsp;<a href="#Card">Card</a>&nbsp;class&nbsp;represents&nbsp;a&nbsp;single&nbsp;playing&nbsp;card&nbsp;and&nbsp;is&nbsp;initialised&nbsp;by&nbsp;passing&nbsp;a&nbsp;suit&nbsp;and&nbsp;number.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Card-__init__"><strong>__init__</strong></a>(self, suit, number)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Card-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>number</strong></dt>
+<dd><tt>Gets&nbsp;or&nbsp;sets&nbsp;the&nbsp;number&nbsp;of&nbsp;a&nbsp;card</tt></dd>
+</dl>
+<dl><dt><strong>suit</strong></dt>
+<dd><tt>Gets&nbsp;or&nbsp;sets&nbsp;the&nbsp;suit&nbsp;of&nbsp;a&nbsp;card</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Deck">class <strong>Deck</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;<a href="#Deck">Deck</a>&nbsp;class&nbsp;represents&nbsp;a&nbsp;deck&nbsp;of&nbsp;playing&nbsp;cards&nbsp;in&nbsp;order.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Deck-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Deck-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Deck-deal"><strong>deal</strong></a>(self, hand)</dt><dd><tt>The&nbsp;deal&nbsp;method&nbsp;automaticaly&nbsp;adds&nbsp;a&nbsp;single&nbsp;card&nbsp;to&nbsp;an&nbsp;array&nbsp;that&nbsp;is&nbsp;specified&nbsp;within&nbsp;the&nbsp;code</tt></dd></dl>
+
+<dl><dt><a name="Deck-populate"><strong>populate</strong></a>(self)</dt><dd><tt>The&nbsp;populate&nbsp;method&nbsp;fills&nbsp;the&nbsp;deck&nbsp;with&nbsp;cards&nbsp;in&nbsp;order</tt></dd></dl>
+
+<dl><dt><a name="Deck-shuffle"><strong>shuffle</strong></a>(self)</dt><dd><tt>The&nbsp;shuffle&nbsp;method&nbsp;sorts&nbsp;the&nbsp;code&nbsp;within&nbsp;the&nbsp;deck&nbsp;into&nbsp;a&nbsp;random&nbsp;order</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Discard_Pile">class <strong>Discard_Pile</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;<a href="#Discard_Pile">Discard_Pile</a>&nbsp;class&nbsp;represents&nbsp;a&nbsp;discard&nbsp;pile&nbsp;in&nbsp;a&nbsp;card&nbsp;game.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Discard_Pile-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Discard_Pile-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<dl><dt><a name="Discard_Pile-discard"><strong>discard</strong></a>(self, hand, card_number)</dt><dd><tt>The&nbsp;discard&nbsp;method&nbsp;moves&nbsp;a&nbsp;card&nbsp;from&nbsp;a&nbsp;hand&nbsp;into&nbsp;a&nbsp;seperate&nbsp;list</tt></dd></dl>
+
+<dl><dt><a name="Discard_Pile-get_face_card"><strong>get_face_card</strong></a>(self, discard_pile)</dt><dd><tt>The&nbsp;get_face_card&nbsp;method&nbsp;retrieves&nbsp;the&nbsp;first&nbsp;card&nbsp;from&nbsp;the&nbsp;discard&nbsp;pile&nbsp;list</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Hand">class <strong>Hand</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;<a href="#Hand">Hand</a>&nbsp;class&nbsp;represents&nbsp;a&nbsp;hand&nbsp;of&nbsp;playing&nbsp;cards&nbsp;held&nbsp;by&nbsp;a&nbsp;single&nbsp;player&nbsp;in&nbsp;a&nbsp;typical&nbsp;card&nbsp;game.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Hand-__init__"><strong>__init__</strong></a>(self)</dt><dd><tt>Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</tt></dd></dl>
+
+<dl><dt><a name="Hand-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;repr(self).</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
