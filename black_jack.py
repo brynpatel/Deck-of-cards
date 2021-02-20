@@ -9,11 +9,11 @@ def check(card1, card2):
     else:
         check = False
     return check
-    
+
 def turn(myCard, myHand, opponentsHand, deck):
     cardplayed = False
     while cardplayed == False:
-        myCard = input("what card would you like to put down?, press P to pick up.")
+        myCard = input("what card would you like to put down?, press P to pick up. ")
         if myCard.lower() == "p":
             deck.cards[0].move(deck.cards, myHand.cards)
             print("You picked up")
@@ -32,7 +32,7 @@ def turn(myCard, myHand, opponentsHand, deck):
         else:
             print("That is not a valid option, try again")
             cardplayed = False
-    
+
     for card in opponentsHand.cards:
         if check(card, discard_pile.get_face_card()) == True:
             print("I played", card)
@@ -74,10 +74,5 @@ while win == False:
     else:
         win = False
         print("=========================NEXT TURN======================")
-        print(my_hand) 
+        print(my_hand)
         print(discard_pile.get_face_card())
-        
-
-            
-
-
