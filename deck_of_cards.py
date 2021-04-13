@@ -23,7 +23,7 @@ class Card:
 
     @property
     def suit(self):
-        
+
         """
         Gets or sets the suit of a card
         """
@@ -72,17 +72,17 @@ class Deck:
         """
         The populate method fills the deck with cards in order
         """
-        
+
         suits = ["hearts", "clubs", "diamonds", "spades"]
         numbers = [str(n) for n in range(2,11)] + ["J", "Q", "K", "A"]
         self._cards = [ Card(s, n) for s in suits for n in numbers ]
-    
+
     def shuffle(self):
 
         """
         The shuffle method sorts the code within the deck into a random order
         """
-        
+
         random.shuffle(self._cards)
 
     def deal(self, hand):
@@ -90,7 +90,7 @@ class Deck:
             """
             The deal method automaticaly adds a single card to an array that is specified within the code
             """
-        
+
             dealt_card = self._cards.pop(0)
             hand._cards.append(dealt_card)
 
@@ -137,8 +137,8 @@ class Discard_Pile:
         """
         The discard method moves a card from a hand into a seperate list
         """
-        
-        discarded_card = hand._cards.pop(0) 
+
+        discarded_card = hand._cards.pop(0)
         self._discard_pile.append(self._discard_pile)
 
     def get_face_card(self):
@@ -146,17 +146,9 @@ class Discard_Pile:
         """
         The get_face_card method retrieves the first card from the discard pile list
         """
-        
+
         face_discard_card = self._discard_pile[0]
         return face_discard_card
 
     def __repr__(self):
         return str(self._discard_pile)
-        
-
-        
-        
-
-
-
-
